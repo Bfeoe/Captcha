@@ -12,7 +12,6 @@ Save_path = "./data/clean_data/"
 img_list = os.listdir(Read_path)
 for i, v in enumerate(img_list):
     img_list[i] = os.path.splitext(v)[0]
-    print("灰度图转换了：", i + 1, "张")
 for i, v in enumerate(img_list):
     img = cv2.imread(Read_path + v + '.png')
     # 灰度化，转为单通道
